@@ -12,3 +12,78 @@ Stack trace:
 #9 {main}
 REQUEST_URI=/
 ---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "ico/favicon.ico"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('ico/favicon.ico')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/ico/favicon.ico
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/13 05:10:06 [error] [exception.CException] exception 'CException' with message '别名 "admin.AdminModule" 无效。请确认它指向一个存在的PHP文件。' in D:\wamp\www\framework\YiiBase.php:323
+Stack trace:
+#0 D:\wamp\www\framework\YiiBase.php(196): YiiBase::import('admin.AdminModu...', true)
+#1 D:\wamp\www\framework\base\CModule.php(282): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#2 D:\wamp\www\framework\web\CWebApplication.php(337): CModule->getModule('admin')
+#3 D:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#4 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
