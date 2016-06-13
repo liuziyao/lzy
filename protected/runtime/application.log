@@ -1,0 +1,14 @@
+2016/06/12 11:17:08 [error] [exception.CException] exception 'CException' with message 'CMemCache requires PHP memcache extension to be loaded.' in D:\wamp\www\framework\caching\CMemCache.php:116
+Stack trace:
+#0 D:\wamp\www\framework\caching\CMemCache.php(89): CMemCache->getMemCache()
+#1 D:\wamp\www\framework\base\CModule.php(394): CMemCache->init()
+#2 D:\wamp\www\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#3 D:\wamp\www\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#4 D:\wamp\www\framework\base\CModule.php(394): CUrlManager->init()
+#5 D:\wamp\www\framework\base\CApplication.php(530): CModule->getComponent('urlManager')
+#6 D:\wamp\www\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#7 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
