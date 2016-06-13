@@ -25,7 +25,7 @@ return array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '192.168.1.50', '192.168.1.254', '192.168.1.80', '::1'),
         ),
-        'admin', 'mp'
+        'admin',
     ),
     // application components
     'components' => array(

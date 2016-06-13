@@ -7,7 +7,7 @@ return array(
     'connectionString' => 'mysql:host=localhost;dbname=sojg',
     'emulatePrepare' => true,
     'username' => 'root',
-    'password' => '01soujingguan',
+    'password' => '',
     'charset' => 'utf8',
     'enableProfiling'=>true,  
     'enableParamLogging'=>true,  

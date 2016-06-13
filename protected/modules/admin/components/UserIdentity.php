@@ -38,12 +38,5 @@ class UserIdentity extends CUserIdentity {
         return $this->_id;
     }
     
-    public function afterLogin(Admin $admin=null){
-            $admin = $admin ? $admin : $this->admin;
-            $admin->login_num = $admin->login_num + 1;
-            $admin->last_login = time();
-            $admin->last_ip = Yii::app()->request->userHostAddress;
-            $admin->save();
-    }
-
+    
 }

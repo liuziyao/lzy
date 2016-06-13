@@ -16,16 +16,17 @@
         <link rel="stylesheet" href="/static/front/css/font-awesome.min.css">
         <link href="/static/front/css/contacts/fonts.css" rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/static/front/css/style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
         <script src="/static/front/js/jquery.js"></script>
-        
+
     </head>
-    
+
     <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-       
+
 
         <?php echo $content; ?>
 
-        
+
     </body>
 
 </html>
