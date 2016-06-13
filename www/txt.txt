@@ -1,0 +1,6 @@
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370@
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370@
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370
+smtp.126.com:25 RCPT TO - 550 Invalid User: 289747370

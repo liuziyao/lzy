@@ -1,0 +1,242 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('font/fontawesome-webfont.eot');
+  src: url('font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* sprites.less reset */
+[class^="icon-"], 
+[class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+li[class^="icon-"], 
+li[class*=" icon-"] {
+  display: block;
+}
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:after, [class*=" icon-"]:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:after {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:after, li[class*=" icon-"]:after {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:after, li[class*=" icon-"].icon-large:after {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-glass:after              { content: "\f000"; }
+.icon-music:after              { content: "\f001"; }
+.icon-search:after             { content: "\f002"; }
+.icon-envelope:after           { content: "\f003"; }
+.icon-heart:after              { content: "\f004"; }
+.icon-star:after               { content: "\f005"; }
+.icon-star-empty:after         { content: "\f006"; }
+.icon-user:after               { content: "\f007"; }
+.icon-film:after               { content: "\f008"; }
+.icon-th-large:after           { content: "\f009"; }
+.icon-th:after                 { content: "\f00a"; }
+.icon-th-list:after            { content: "\f00b"; }
+.icon-ok:after                 { content: "\f00c"; }
+.icon-remove:after             { content: "\f00d"; }
+.icon-zoom-in:after            { content: "\f00e"; }
+
+.icon-zoom-out:after           { content: "\f010"; }
+.icon-off:after                { content: "\f011"; }
+.icon-signal:after             { content: "\f012"; }
+.icon-cog:after                { content: "\f013"; }
+.icon-trash:after              { content: "\f014"; }
+.icon-home:after               { content: "\f015"; }
+.icon-file:after               { content: "\f016"; }
+.icon-time:after               { content: "\f017"; }
+.icon-road:after               { content: "\f018"; }
+.icon-download-alt:after       { content: "\f019"; }
+.icon-download:after           { content: "\f01a"; }
+.icon-upload:after             { content: "\f01b"; }
+.icon-inbox:after              { content: "\f01c"; }
+.icon-play-circle:after        { content: "\f01d"; }
+.icon-repeat:after             { content: "\f01e"; }
+
+/* \f020 is not a valid unicode character. all shifted one down */
+.icon-refresh:after            { content: "\f021"; }
+.icon-list-alt:after           { content: "\f022"; }
+.icon-lock:after               { content: "\f023"; }
+.icon-flag:after               { content: "\f024"; }
+.icon-headphones:after         { content: "\f025"; }
+.icon-volume-off:after         { content: "\f026"; }
+.icon-volume-down:after        { content: "\f027"; }
+.icon-volume-up:after          { content: "\f028"; }
+.icon-qrcode:after             { content: "\f029"; }
+.icon-barcode:after            { content: "\f02a"; }
+.icon-tag:after                { content: "\f02b"; }
+.icon-tags:after               { content: "\f02c"; }
+.icon-book:after               { content: "\f02d"; }
+.icon-bookmark:after           { content: "\f02e"; }
+.icon-print:after              { content: "\f02f"; }
+
+.icon-camera:after             { content: "\f030"; }
+.icon-font:after               { content: "\f031"; }
+.icon-bold:after               { content: "\f032"; }
+.icon-italic:after             { content: "\f033"; }
+.icon-text-height:after        { content: "\f034"; }
+.icon-text-width:after         { content: "\f035"; }
+.icon-align-left:after         { content: "\f036"; }
+.icon-align-center:after       { content: "\f037"; }
+.icon-align-right:after        { content: "\f038"; }
+.icon-align-justify:after      { content: "\f039"; }
+.icon-list:after               { content: "\f03a"; }
+.icon-indent-left:after        { content: "\f03b"; }
+.icon-indent-right:after       { content: "\f03c"; }
+.icon-facetime-video:after     { content: "\f03d"; }
+.icon-picture:after            { content: "\f03e"; }
+
+.icon-pencil:after             { content: "\f040"; }
+.icon-map-marker:after         { content: "\f041"; }
+.icon-adjust:after             { content: "\f042"; }
+.icon-tint:after               { content: "\f043"; }
+.icon-edit:after               { content: "\f044"; }
+.icon-share:after              { content: "\f045"; }
+.icon-check:after              { content: "\f046"; }
+.icon-move:after               { content: "\f047"; }
+.icon-step-backward:after      { content: "\f048"; }
+.icon-fast-backward:after      { content: "\f049"; }
+.icon-backward:after           { content: "\f04a"; }
+.icon-play:after               { content: "\f04b"; }
+.icon-pause:after              { content: "\f04c"; }
+.icon-stop:after               { content: "\f04d"; }
+.icon-forward:after            { content: "\f04e"; }
+
+.icon-fast-forward:after       { content: "\f050"; }
+.icon-step-forward:after       { content: "\f051"; }
+.icon-eject:after              { content: "\f052"; }
+.icon-chevron-left:after       { content: "\f053"; }
+.icon-chevron-right:after      { content: "\f054"; }
+.icon-plus-sign:after          { content: "\f055"; }
+.icon-minus-sign:after         { content: "\f056"; }
+.icon-remove-sign:after        { content: "\f057"; }
+.icon-ok-sign:after            { content: "\f058"; }
+.icon-question-sign:after      { content: "\f059"; }
+.icon-info-sign:after          { content: "\f05a"; }
+.icon-screenshot:after         { content: "\f05b"; }
+.icon-remove-circle:after      { content: "\f05c"; }
+.icon-ok-circle:after          { content: "\f05d"; }
+.icon-ban-circle:after         { content: "\f05e"; }
+
+.icon-arrow-left:after         { content: "\f060"; }
+.icon-arrow-right:after        { content: "\f061"; }
+.icon-arrow-up:after           { content: "\f062"; }
+.icon-arrow-down:after         { content: "\f063"; }
+.icon-share-alt:after          { content: "\f064"; }
+.icon-resize-full:after        { content: "\f065"; }
+.icon-resize-small:after       { content: "\f066"; }
+.icon-plus:after               { content: "\f067"; }
+.icon-minus:after              { content: "\f068"; }
+.icon-asterisk:after           { content: "\f069"; }
+.icon-exclamation-sign:after   { content: "\f06a"; }
+.icon-gift:after               { content: "\f06b"; }
+.icon-leaf:after               { content: "\f06c"; }
+.icon-fire:after               { content: "\f06d"; }
+.icon-eye-open:after           { content: "\f06e"; }
+
+.icon-eye-close:after          { content: "\f070"; }
+.icon-warning-sign:after       { content: "\f071"; }
+.icon-plane:after              { content: "\f072"; }
+.icon-calendar:after           { content: "\f073"; }
+.icon-random:after             { content: "\f074"; }
+.icon-comment:after            { content: "\f075"; }
+.icon-magnet:after             { content: "\f076"; }
+.icon-chevron-up:after         { content: "\f077"; }
+.icon-chevron-down:after       { content: "\f078"; }
+.icon-retweet:after            { content: "\f079"; }
+.icon-shopping-cart:after      { content: "\f07a"; }
+.icon-folder-close:after       { content: "\f07b"; }
+.icon-folder-open:after        { content: "\f07c"; }
+.icon-resize-vertical:after    { content: "\f07d"; }
+.icon-resize-horizontal:after  { content: "\f07e"; }
+
+.icon-bar-chart:after          { content: "\f080"; }
+.icon-twitter-sign:after       { content: "\f081"; }
+.icon-facebook-sign:after      { content: "\f082"; }
+.icon-camera-retro:after       { content: "\f083"; }
+.icon-key:after                { content: "\f084"; }
+.icon-cogs:after               { content: "\f085"; }
+.icon-comments:after           { content: "\f086"; }
+.icon-thumbs-up:after          { content: "\f087"; }
+.icon-thumbs-down:after        { content: "\f088"; }
+.icon-star-half:after          { content: "\f089"; }
+.icon-heart-empty:after        { content: "\f08a"; }
+.icon-signout:after            { content: "\f08b"; }
+.icon-linkedin-sign:after      { content: "\f08c"; }
+.icon-pushpin:after            { content: "\f08d"; }
+.icon-external-link:after      { content: "\f08e"; }
+
+.icon-signin:after             { content: "\f090"; }
+.icon-trophy:after             { content: "\f091"; }
+.icon-github-sign:after        { content: "\f092"; }
+.icon-upload-alt:after         { content: "\f093"; }
+.icon-lemon:after              { content: "\f094"; }
