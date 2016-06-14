@@ -1,0 +1,11 @@
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `title` varchar(32) NOT NULL DEFAULT '' COMMENT '标题',
+  `sorting` tinyint(4) NOT NULL DEFAULT '0' COMMENT '排序',
+  `cat_id` int(11) NOT NULL DEFAULT '0' COMMENT '分类ID',
+  `content` text NOT NULL COMMENT '新闻内容',
+  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态，1为显示，0为隐藏',
+  `pv` int(32) NOT NULL DEFAULT '0' COMMENT '浏览量',
+  `created` int(32) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;

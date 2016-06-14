@@ -44,7 +44,7 @@
                 <div class="li_main li_close"><a href="#"><i class="glyphicon"></i>新闻资讯<i class="glyphicon glyphicon-cog setting"></i></a></div>
                 <ul>
                     <li class="li_sub"><a href="<?php echo $this->createUrl('/admin/newscategory') ?>"><i class="glyphicon glyphicon-th"></i>分类管理</a></li>
-                    <li class="li_sub"><a href=""><i class="glyphicon glyphicon-th"></i>资讯管理</a></li>
+                    <li class="li_sub"><a href="<?php echo $this->createUrl('/admin/news'); ?>"><i class="glyphicon glyphicon-th"></i>资讯管理</a></li>
 
                 </ul>
             </div>

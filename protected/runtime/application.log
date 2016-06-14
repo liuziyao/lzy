@@ -973,3 +973,189 @@ REQUEST_URI=/admin/newscategory/index.html
 in D:\wamp\www\lzy\protected\modules\admin\views\newscategory\index.php (45)
 in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsCategoryController.php (14)
 in D:\wamp\www\lzy\www\index.php (10)
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 22:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "ico/favicon.ico"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('ico/favicon.ico')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/ico/favicon.ico
+HTTP_REFERER=http://lzy.loc/
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/news"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/news')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/news.html
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/ico/favicon.ico"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ico/favic...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ico/favicon.ico
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/14 23:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/news/save')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/news/save.html
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 00:26:41 [error] [exception.CException] exception 'CException' with message '属性 "News.titiel" 未被定义.' in D:\wamp\www\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('titiel')
+#1 D:\wamp\www\framework\validators\CRequiredValidator.php(58): CActiveRecord->__get('titiel')
+#2 D:\wamp\www\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(News), 'titiel')
+#3 D:\wamp\www\framework\base\CModel.php(159): CValidator->validate(Object(News), NULL)
+#4 D:\wamp\www\framework\db\ar\CActiveRecord.php(808): CModel->validate(NULL)
+#5 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(35): CActiveRecord->save()
+#6 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionSave()
+#7 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('save')
+#11 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/news/save')
+#12 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/news/save.html
+HTTP_REFERER=http://lzy.loc/admin/news/update/id/4.html
+---
+2016/06/15 00:26:55 [error] [exception.CException] exception 'CException' with message '属性 "News.titie" 未被定义.' in D:\wamp\www\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('titie')
+#1 D:\wamp\www\framework\validators\CRequiredValidator.php(58): CActiveRecord->__get('titie')
+#2 D:\wamp\www\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(News), 'titie')
+#3 D:\wamp\www\framework\base\CModel.php(159): CValidator->validate(Object(News), NULL)
+#4 D:\wamp\www\framework\db\ar\CActiveRecord.php(808): CModel->validate(NULL)
+#5 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(35): CActiveRecord->save()
+#6 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionSave()
+#7 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('save')
+#11 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/news/save')
+#12 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#14 {main}
+REQUEST_URI=/admin/news/save.html
+HTTP_REFERER=http://lzy.loc/admin/news/update/id/4.html
+---
