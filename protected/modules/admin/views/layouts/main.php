@@ -16,8 +16,9 @@
           <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/static/mp/css/public.css" type="text/css" media="screen" /> 
-        <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/static/admin/css/public.css" type="text/css" media="screen" /> 
+        <link rel="stylesheet" href="/static/mp/css/public.css" type="text/css" media="screen" /> 
+        <link rel="stylesheet" href="/static/admin/css/public.css" type="text/css" media="screen" /> 
+        <!--<link rel="stylesheet" href="/static/admin/css/ace.min.css" type="text/css" media="screen" />--> 
         <link rel="stylesheet" type="text/css" href="/static/area/css/area.css"  />
         <script type="text/javascript" src="/static/admin/js/common.js"></script>
         <script type="text/javascript" src="/static/area/js/popt.js"></script>
@@ -40,11 +41,11 @@
         </div>
         <div class="layouts_content clear">
             <div class="layouts_content_left">
-                 <div class="li_main li_close"><a href="#"><i class="glyphicon"></i>新闻资讯<i class="glyphicon glyphicon-cog setting"></i></a></div>
+                <div class="li_main li_close"><a href="#"><i class="glyphicon"></i>新闻资讯<i class="glyphicon glyphicon-cog setting"></i></a></div>
                 <ul>
-                    <li class="li_sub"><a href=""><i class="glyphicon glyphicon-th"></i>分类管理</a></li>
+                    <li class="li_sub"><a href="<?php echo $this->createUrl('/admin/newscategory') ?>"><i class="glyphicon glyphicon-th"></i>分类管理</a></li>
                     <li class="li_sub"><a href=""><i class="glyphicon glyphicon-th"></i>资讯管理</a></li>
-                    
+
                 </ul>
             </div>
             <div class="layouts_content_right f_left">

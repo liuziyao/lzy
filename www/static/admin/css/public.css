@@ -8,7 +8,6 @@ ul,li{list-style: none}
 .laydate_body .laydate_top{padding:0px}
 .laydate_body .laydate_bottom{height:35px;}
 span.required{color:red}
-//.form-inline .form-control{width:550px;}
 
 .mynavbar{height:50px;width:100%;background:#000}
 .mynavbar .logo{background:#293038;;height: 100%;line-height: 100%}
@@ -34,13 +33,6 @@ span.required{color:red}
 /*认证*/
 .user-verify{font-size: 12px;border:1px solid #f3f3f3;line-height:20px;margin-left:5px;padding:5px}
 .user-verify.on{font-size: 12px;color:#f8b85e;border:1px solid #f8b85e;line-height:20px;margin-left:5px;padding:5px}
-
-
-
-
-
-
-
 
 
 
