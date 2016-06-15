@@ -49,7 +49,7 @@ class News extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('content, tab', 'required'),
+            array('content', 'required'),
             array('sorting, user_id, admin_id, cat_id, status, approve_state, fav_count, view_count, eval_count, like_count, dislike_count, created', 'numerical', 'integerOnly' => true),
             array('title, image', 'length', 'max' => 128),
             array('user_name, admin_name, origin', 'length', 'max' => 64),

@@ -61,7 +61,8 @@ class NewsController extends Controller {
         $id = Yii::app()->request->getParam('id',0);
         $model = News::model()->find('id=:id',array(":id"=>$id));
         $cate = News::model()->getNewsCategory();
-        $this->render('_form',array('model'=>$model,'cate'=>$cate));
+        $name = News::model()->getUserName();
+        $this->render('_form',array('model'=>$model,'cate'=>$cate,'name'=>$name));
     }
 
     public function actionDelete() {

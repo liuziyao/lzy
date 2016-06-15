@@ -4291,3 +4291,151 @@ Stack trace:
 REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
 HTTP_REFERER=http://lzy.loc/news/index
 ---
+2016/06/15 21:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:40:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:40:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/create.html
+---
+2016/06/15 21:43:19 [error] [php] Undefined variable: name (D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php:48)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(64): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionUpdate()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news/update/id/6.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php (48)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (64)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 21:44:37 [error] [php] Undefined variable: name (D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php:48)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(64): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionUpdate()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news/update/id/6.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php (48)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (64)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 21:45:26 [error] [php] Undefined variable: name (D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php:48)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(64): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionUpdate()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news/update/id/6.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php (48)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (64)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 21:45:27 [error] [php] Undefined variable: name (D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php:48)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(64): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionUpdate()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news/update/id/6.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php (48)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (64)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 21:45:32 [error] [php] Undefined variable: name (D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php:48)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(64): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionUpdate()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news/update/id/5.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\_form.php (48)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (64)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 21:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/wechat/images/pic2.jpg"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/wechat/i...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/wechat/images/pic2.jpg
+HTTP_REFERER=http://lzy.loc/admin/news/update/id/5.html
+---
