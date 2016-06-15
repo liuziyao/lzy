@@ -1415,3 +1415,2879 @@ Stack trace:
 REQUEST_URI=/admin/news/create.html
 HTTP_REFERER=http://lzy.loc/admin/news.html
 ---
+2016/06/15 18:08:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.approve_state' in 'where clause'. The SQL statement executed was: SELECT * FROM `news` `t` WHERE user.approve_state=:ycp0. Bound with :ycp0='1'.
+in D:\wamp\www\lzy\protected\models\News.php (177)
+in D:\wamp\www\lzy\protected\controllers\NewsController.php (17)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 18:08:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.approve_state' in 'where clause'. The SQL statement executed was: SELECT * FROM `news` `t` WHERE user.approve_state=:ycp0. Bound with :ycp0='1'' in D:\wamp\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\wamp\www\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\wamp\www\lzy\protected\models\News.php(177): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\wamp\www\lzy\protected\controllers\NewsController.php(17): News->getList()
+#5 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#6 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('index')
+#10 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index')
+#11 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#13 {main}
+REQUEST_URI=/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/main.c...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/main.c...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/main.c...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "css" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('css')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('css')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/css/main.c...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/c_code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/weixin.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/l_code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/qq.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/big_logo.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/static/front_css/public.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/public.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/public.css
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/main.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/main.css
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/c_code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/big_logo.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/l_code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/qq.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/code.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/code.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front_css/img/public/weixin.png"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front_cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front_css/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/static/front_css/main.css
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/c_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/qq.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/weixin.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/l_code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/code.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/public...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/public/big_logo.png
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/jquery-...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/jquery-1.4.2.min.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/common....')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/common.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('js')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('js')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/js/super.j...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/js/super.js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+---
+2016/06/15 18:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/jquery-1.4.2.min./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/jquery-1.4.2.min./static/front/front_js
+HTTP_REFERER=http://lzy.loc/static/front/front_js/super./static/front/front_js
+---
+2016/06/15 18:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/common./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/common./static/front/front_js
+HTTP_REFERER=http://lzy.loc/static/front/front_js/super./static/front/front_js
+---
+2016/06/15 18:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/front_js/super./static/front/front_js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/fr...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/front_js/super./static/front/front_js
+HTTP_REFERER=http://lzy.loc/static/front/front_js/super./static/front/front_js
+---
+2016/06/15 18:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/li...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/listimg.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/new/ne...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/new/new.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---
+2016/06/15 18:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in D:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\wamp\www\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('news/img/famous...')
+#3 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/img/famous_enterprise/r_img1.jpg
+HTTP_REFERER=http://lzy.loc/news/index
+---

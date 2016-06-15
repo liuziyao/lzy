@@ -14,6 +14,7 @@
 class NewsController extends Controller{
     //put your code here
     public function actionIndex(){
-        
+        $news_list = News::model()->getList();
+        $this->render('index',array('news_list'=>$news_list));
     }
 }

@@ -9,8 +9,8 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <title>行业新闻-列表页</title>
-        <link rel="stylesheet" type="text/css" href="css/public.css"  />
-        <link rel="stylesheet" type="text/css" href="css/main.css"  />
+        <link rel="stylesheet" type="text/css" href="/static/front/front_css/public.css"  />
+        <link rel="stylesheet" type="text/css" href="/static/front/front_css/main.css"  />
     </head>
 
     <body>
@@ -20,7 +20,7 @@
             <ul class="p_40 register_form m_li15 f_w100">
                 <li><input type="text" placeholder="输入邮箱账号" class="f_text"/></li>
                 <li><input type="password" placeholder="输入下面的验证码" class="f_text"/></li>
-                <li class="a-underline"><img src="img/public/c_code.png" /> <a  class="blue">看不清，换一张</a></li>
+                <li class="a-underline"><img src="/static/front/front_img/c_code.png" /> <a  class="blue">看不清，换一张</a></li>
                 <li><input type="button" value="确定"  class="long-btn bg_4ca6ff cfff m_t20"/></li>
             </ul>
         </div>
@@ -36,11 +36,11 @@
                 <li class="clearfix p_t10">
                     <div class="left">
                         <p class="c999 p_b20">或使用以下方式登录：<p>
-                            <a><img src="img/public/qq.png"></a>
-                            <a><img src="img/public/weixin.png"></a>
+                            <a><img src="/static/front/front_img/qq.png"></a>
+                            <a><img src="/static/front/front_img/weixin.png"></a>
                     </div>
                     <div class="right">
-                        <img src="img/public/l_code.png">
+                        <img src="/static/front/front_img/l_code.png">
                         <p class="text_c">官方微信<p>
                     </div>
                 </li>
@@ -55,13 +55,13 @@
                 <li><span class="label">密码</span><input type="password" value=""  class="f_text" placeholder="输入6-12个字符，字母区分大小写"//></li>
                 <li><span class="label">确认密码</span><input type="password" value="" class="f_text" placeholder="请再次输入密码"//></li>
                 <li><span class="label">验证码</span><input type="text" value=""  class="f_text" placeholder="输入下面验证码，不区分大小写"//></li>
-                <li class="a-underline"><span class="label">&nbsp;</span><img src="img/public/c_code.png" /> <a href="" class="blue">看不清，换一张</a></li>
+                <li class="a-underline"><span class="label">&nbsp;</span><img src="/static/front/front_img/c_code.png" /> <a href="" class="blue">看不清，换一张</a></li>
                 <li><span class="label">&nbsp;</span><input type="button" value="注册"  class="long-btn bg_4ca6ff cfff"/></li>
                 <li class="c666 "><span class="label">&nbsp;</span><input type="checkbox" value="" />阅读并接受<a class="blue" >《搜景观注册协议》</a>和<a class="blue">《隐私权相关政策》</a></li>
             </ul>
 
             <div class="right  borderline p_40 m_t50 m_r100 p_b20">
-                <img src="img/public/code.png" />
+                <img src="/static/front/front_img/code.png" />
                 <p class="m_t10 c999 text_c">搜景观官方微信</p>
             </div>
         </div>
@@ -75,7 +75,7 @@
         </div>	
 
         <div class="query wrap p_t50 clearfix">
-            <img src="img/public/big_logo.png"  class="left"/>
+            <img src="/static/front/front_img/big_logo.png"  class="left"/>
             <div class="left m_l90 query">
                 <select class="q_btn f14" style="margin-left:-45px; margin-right:-10px;" >
                     <option>精品图片</option>
@@ -95,15 +95,15 @@
 
         <div class="nav m_t35 m_b30">
             <div class="wrap c333 f14">
-                <a href="boutique-image-list-1.html">精品图片</a>
-                <a href="boutique-project-list-2.html">精品项目</a>
-                <a href="famous-enterprise.html">知名企业</a>
-                <a href="landscape-elite.html">景观精英</a>
-                <a href="project-cooperation.html">项目合作</a>
-                <a href="job.html">找工作</a>
-                <a href="talent.html">聘人才</a>
-                <a href="active.html">行业活动</a>
-                <a class="active" href="new.html">行业新闻</a>
+                <a href="">精品图片</a>
+                <a href="">精品项目</a>
+                <a href="">知名企业</a>
+                <a href="">景观精英</a>
+                <a href="">项目合作</a>
+                <a href="">找工作</a>
+                <a href="">聘人才</a>
+                <a href="">行业活动</a>
+                <a class="active" href="">行业新闻</a>
             </div>
         </div>
 
@@ -112,5 +112,8 @@
 
 
     </body>
+    <script type="text/javascript" src="/static/front/front_js/jquery-1.4.2.min.js"></script>	
+    <script type="text/javascript" src="/static/front/front_js/super.js"></script>	
+    <script type="text/javascript" src="/static/front/front_js/common.js"></script>
 
 </html>
