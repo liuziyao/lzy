@@ -1159,3 +1159,225 @@ Stack trace:
 REQUEST_URI=/admin/news/save.html
 HTTP_REFERER=http://lzy.loc/admin/news/update/id/4.html
 ---
+2016/06/15 10:14:59 [error] [php] Undefined index: cat_id (D:\wamp\www\lzy\protected\modules\admin\views\news\index.php:20)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(24): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\index.php (20)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (24)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/ico/favicon.ico"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ico/favic...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ico/favicon.ico
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [php] Undefined index: cat_id (D:\wamp\www\lzy\protected\modules\admin\views\news\index.php:20)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(24): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\index.php (20)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (24)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [php] Undefined index: cat_id (D:\wamp\www\lzy\protected\modules\admin\views\news\index.php:20)
+Stack trace:
+#0 D:\wamp\www\framework\web\CController.php(869): NewsController->renderFile()
+#1 D:\wamp\www\framework\web\CController.php(782): NewsController->renderPartial()
+#2 D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php(24): NewsController->render()
+#3 D:\wamp\www\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#4 D:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\framework\web\CController.php(286): NewsController->runAction()
+#6 D:\wamp\www\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#7 D:\wamp\www\framework\web\CWebApplication.php(282): NewsController->run()
+#8 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\wamp\www\lzy\www\index.php(10): CWebApplication->run()
+REQUEST_URI=/admin/news.html
+in D:\wamp\www\lzy\protected\modules\admin\views\news\index.php (20)
+in D:\wamp\www\lzy\protected\modules\admin\controllers\NewsController.php (24)
+in D:\wamp\www\lzy\www\index.php (10)
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/bootstrap.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/bootstrap.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/font-awesome.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/font-awesome.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/contacts/fonts.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/contacts/fonts.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/animate.min.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/animate.min.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/js/jquery.js"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/js...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/js/jquery.js
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---
+2016/06/15 10:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "static/front/css/style.css"。' in D:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/front/cs...')
+#1 D:\wamp\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\wamp\www\lzy\www\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/front/css/style.css
+HTTP_REFERER=http://lzy.loc/admin/news.html
+---

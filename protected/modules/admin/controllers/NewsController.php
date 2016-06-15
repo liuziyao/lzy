@@ -7,8 +7,21 @@ class NewsController extends Controller {
         $this->breadcrumbs = array('资讯管理');
         $criteria = new CDbCriteria();
         $criteria->order = 'sorting asc';
+        $title = Yii::app()->request->getParam('title','');
+        if($title){
+            $criteria->addSearchCondition('title', $title);
+        }
+        $cat_id = Yii::app()->request->getParam('cat_id',0);
+        if($cat_id){
+            $criteria->compare('cat_id', $cat_id);
+        }
+        $count = News::model()->count($criteria);
+        $pager = new CPagination($count);
+        $pager->pageSize = 10;
+        $pager->applyLimit($criteria);
         $model = News::model()->findAll($criteria);
-        $this->render('index', array('model' => $model));
+        $cate = News::model()->getNewsCategory();
+        $this->render('index', array('model' => $model,'cate'=>$cate,'pager'=>$pager));
     }
 
     public function actionCreate() {

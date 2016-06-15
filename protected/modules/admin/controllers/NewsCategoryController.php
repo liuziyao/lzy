@@ -10,8 +10,12 @@ class NewsCategoryController extends Controller{
         if($name){
             $criteria->addSearchCondition('name',$name);
         }
+        $count = NewsCategory::model()->count($criteria);
+        $pager = new CPagination($count);
+        $pager->pageSize = 10;
+        $pager->applyLimit($criteria);
         $model = NewsCategory::model()->findAll($criteria);
-        $this->render('index', array('model' => $model));
+        $this->render('index', array('model' => $model,'pager'=>$pager));
     }
 
     public function actionCreate() {
@@ -50,6 +54,12 @@ class NewsCategoryController extends Controller{
         $id = Yii::app()->request->getParam('id', 0);
         if ($id) {
             $id = explode(",",$id);
+        }
+        foreach($id as $v){
+            $news = News::model()->find('cat_id = :id',array(':id'=>$v));
+            if($news){
+                $this->error('此分类中有资讯存在，不可删除');
+            }
         }
         $model = new NewsCategory();
         $criteria = new CDbCriteria();

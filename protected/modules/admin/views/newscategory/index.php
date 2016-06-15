@@ -45,11 +45,37 @@
                     <td><?php echo NewsCategory::model()->getKv($v->status); ?></td>
                     <td><?php echo date("Y-m-d H:i:s", $v->created); ?></td>
                     <td>
-                        <a href='<?php echo $this->createUrl('update',array('id'=>$v->id)) ?>'>[修改]</a>
-                        <a onclick="return window.confirm('您确定要删除吗？')" href='<?php echo $this->createUrl('delete',array('id'=>$v->id)) ?>'>[删除]</a>
+                        <a href='<?php echo $this->createUrl('update', array('id' => $v->id)) ?>'>[修改]</a>
+                        <a onclick="return window.confirm('您确定要删除吗？')" href='<?php echo $this->createUrl('delete', array('id' => $v->id)) ?>'>[删除]</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
+            <tr>
+                <td colspan='14' align='right'>
+                    <nav>
+                        <div class='page'>
+                            <?php
+                            $this->widget('CLinkPager', array(
+                                'header' => '',
+                                'firstPageLabel' => '首页',
+                                'lastPageLabel' => '末页',
+                                'prevPageLabel' => '上一页',
+                                'nextPageLabel' => '下一页',
+                                'pages' => $pager,
+                                'maxButtonCount' => 5,
+                                'cssFile' => '',
+                                'internalPageCssClass' => '',
+                                'selectedPageCssClass' => 'active',
+                                'htmlOptions' => array(
+                                    'class' => 'pagination',
+                                ),
+                                    )
+                            );
+                            ?>
+                        </div>
+                    </nav>
+                </td>
+            </tr>
         </tbody>
     </table>
     <form id='form1' action="<?php echo $this->createUrl('delete') ?>" method="post">
