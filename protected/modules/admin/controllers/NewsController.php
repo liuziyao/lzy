@@ -15,20 +15,26 @@ class NewsController extends Controller {
         if($cat_id){
             $criteria->compare('cat_id', $cat_id);
         }
+        $user_id = Yii::app()->request->getParam('user_id',0);
+        if($user_id){
+            $criteria->compare('user_id', $user_id);
+        }
         $count = News::model()->count($criteria);
         $pager = new CPagination($count);
         $pager->pageSize = 10;
         $pager->applyLimit($criteria);
         $model = News::model()->findAll($criteria);
         $cate = News::model()->getNewsCategory();
-        $this->render('index', array('model' => $model,'cate'=>$cate,'pager'=>$pager));
+        $name = News::model()->getUserName();
+        $this->render('index', array('model' => $model,'cate'=>$cate,'pager'=>$pager,'name'=>$name));
     }
 
     public function actionCreate() {
         $this->breadcrumbs = array('添加资讯');
         $cate = News::model()->getNewsCategory();
+        $name = News::model()->getUserName();
         $model = new News();
-        $this->render('_form', array('model' => $model, 'cate' => $cate));
+        $this->render('_form', array('model' => $model, 'cate' => $cate,'name'=>$name));
     }
 
     public function actionSave() {

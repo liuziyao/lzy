@@ -22,6 +22,16 @@
                         <?php endif; ?>
                     </select>
                 </div>
+                 <div class="pull-left" style="margin-left:20px">
+                    <select class="form-control" name="user_id">
+                        <option value="0">--会员名称--</option>
+                        <?php if ($name): ?>
+                            <?php foreach ($name as $k => $v): ?>
+                        <option value="<?php echo $k; ?>" <?php if(Yii::app()->request->getParam('user_id',0) == $k): ?>selected <?php endif;?>><?php echo $v; ?></option>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </select>
+                </div>
                 <button class="btn btn-default" type="submit">搜索</button>
             </form>
         </td>
@@ -36,6 +46,7 @@
                 <td><input type='checkbox' id='checkAll' myid='0'  /><label for='checkAll'>选择</label></td>
                 <td>标题</td>
                 <td>分类名称</td>
+                <td>会员名称</td>
                 <td>排序</td>
                 <td>状态</td>
                 <td>创建时间</td>
@@ -49,6 +60,7 @@
                     <td width='7%'><input type='checkbox' name='del' value='<?php echo $v->id ?>' /></td>
                     <td><?php echo $v->title; ?></td>
                     <td><?php echo isset($v->category) ? $v->category->name : $v->cat_id; ?></td>
+                    <td><?php echo isset($v->user) ? $v->user->username : $v->user_id; ?></td>
                     <td><?php echo $v->sorting; ?></td>
                     <td><?php echo News::model()->getKv($v->status); ?></td>
                     <td><?php echo date("Y-m-d H:i:s", $v->created); ?></td>

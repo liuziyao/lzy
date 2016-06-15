@@ -42,6 +42,15 @@
         </tr>
         <tr>
             <td  style="text-align: right;width:100px;">
+                <?php echo $form->labelEx($model, 'user_id') ?>
+            </td>
+            <td style="text-align: left;width:40%;">
+                <?php echo $form->dropDownList($model, 'user_id',$name, array('class' => 'form-control')) ?>
+            </td>
+            <td><?php echo $form->error($model, 'user_id'); ?></td>
+        </tr>
+        <tr>
+            <td  style="text-align: right;width:100px;">
                 <?php echo $form->labelEx($model, 'status',array('class'=>'pt8')) ?>
             </td>
             <td style="text-align: left;width:40%;">
