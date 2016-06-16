@@ -43,78 +43,11 @@
 
             </div>
 
-            <div  class="clearfix borderline p_20 m_t10">
-                <img src="img/new/listimg.jpg" class="left"/>
-                <div class="right m_l20 w615">
-                    <h4 class="blue f14 bold"><a href="new-detail.html">布达拉宫将获立法保护 1500米内建筑或限高</a>  <span class="radius-sp">独家</span></h4>
-                    <div class="c999">发布主体：深圳市壹零艺术设计有限公司    <span class="m_l20">编辑时间：2015-05-20 15:06</span></div>
-                    <div>
-                        会议认为，通过法规形式依法加强对布达拉宫历史建筑群文化遗产的保护和管理，对于继承和弘扬历史文化、推
-                        进依法行政、建设法治西藏等具有重要的历史意义、现实意义和政治意义，自治区文物局根据会议..<a class="blue">[查看详细]</a>
-                    </div>
-                </div>	
-
-            </div>
-
-
-            <div  class="clearfix borderline p_20 m_t10">
-                <img src="img/new/listimg.jpg" class="left"/>
-                <div class="right m_l20 w615">
-                    <h4 class="blue f14 bold"><a href="new-detail.html">布达拉宫将获立法保护 1500米内建筑或限高</a>  <span class="radius-sp">独家</span></h4>
-                    <div class="c999">发布主体：深圳市壹零艺术设计有限公司    <span class="m_l20">编辑时间：2015-05-20 15:06</span></div>
-                    <div>
-                        会议认为，通过法规形式依法加强对布达拉宫历史建筑群文化遗产的保护和管理，对于继承和弘扬历史文化、推
-                        进依法行政、建设法治西藏等具有重要的历史意义、现实意义和政治意义，自治区文物局根据会议..<a class="blue">[查看详细]</a>
-                    </div>
-                </div>	
-
-            </div>
-
-
-            <div  class="clearfix borderline p_20 m_t10">
-                <img src="img/new/listimg.jpg" class="left"/>
-                <div class="right m_l20 w615">
-                    <h4 class="blue f14 bold"><a href="new-detail.html">布达拉宫将获立法保护 1500米内建筑或限高</a>  <span class="radius-sp">独家</span></h4>
-                    <div class="c999">发布主体：深圳市壹零艺术设计有限公司    <span class="m_l20">编辑时间：2015-05-20 15:06</span></div>
-                    <div>
-                        会议认为，通过法规形式依法加强对布达拉宫历史建筑群文化遗产的保护和管理，对于继承和弘扬历史文化、推
-                        进依法行政、建设法治西藏等具有重要的历史意义、现实意义和政治意义，自治区文物局根据会议..<a class="blue">[查看详细]</a>
-                    </div>
-                </div>	
-
-            </div>
-
-
-            <div  class="clearfix borderline p_20 m_t10">
-                <img src="img/new/listimg.jpg" class="left"/>
-                <div class="right m_l20 w615">
-                    <h4 class="blue f14 bold"><a href="new-detail.html">布达拉宫将获立法保护 1500米内建筑或限高</a>  <span class="radius-sp">独家</span></h4>
-                    <div class="c999">发布主体：深圳市壹零艺术设计有限公司    <span class="m_l20">编辑时间：2015-05-20 15:06</span></div>
-                    <div>
-                        会议认为，通过法规形式依法加强对布达拉宫历史建筑群文化遗产的保护和管理，对于继承和弘扬历史文化、推
-                        进依法行政、建设法治西藏等具有重要的历史意义、现实意义和政治意义，自治区文物局根据会议..<a class="blue">[查看详细]</a>
-                    </div>
-                </div>	
-
-            </div>
+            
 
 
         </div>
 
-        <div class="page m_t20 m_b10 ">
-            <a>< 上一页</a>
-            <a>1</a>
-            <a class="on">2</a>
-            <a>3</a>
-            <a>4</a>
-            <a>5</a>
-            <span>...</span>
-            <a>下一页 ></a>
-
-            <span class="m_l20 c999">共100页，到第 <input type="text" value="" class="pagetext"/> 页</span>
-
-            <a >确定</a>
-        </div>
     </div>
 
     <div class="w200 m_l10 left" >

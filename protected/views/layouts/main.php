@@ -49,21 +49,23 @@
 
         <div class="pop"  style="display:none;"  id="pop_register_id">
             <h4 class="bg_f4f4f3"><a class="p_close right m_t5" onclick="common.popHide('pop_register_id')"></a><span class="m_block"></span>账号注册</h4>
-            <ul class="register_form left m_t20" >
-                <li><span class="label">用户类型</span>  <input type="checkbox" value="" /><span class="c666">个人会员</span>  <input type="checkbox" value="" /><span class="c666">企业会员</span></li>
-                <li><span class="label">账号</span><input type="text" value="" class="f_text" placeholder="输入邮箱"/></li>
-                <li><span class="label">密码</span><input type="password" value=""  class="f_text" placeholder="输入6-12个字符，字母区分大小写"//></li>
-                <li><span class="label">确认密码</span><input type="password" value="" class="f_text" placeholder="请再次输入密码"//></li>
-                <li><span class="label">验证码</span><input type="text" value=""  class="f_text" placeholder="输入下面验证码，不区分大小写"//></li>
-                <li class="a-underline"><span class="label">&nbsp;</span><img src="/static/front/front_img/c_code.png" /> <a href="" class="blue">看不清，换一张</a></li>
-                <li><span class="label">&nbsp;</span><input type="button" value="注册"  class="long-btn bg_4ca6ff cfff"/></li>
-                <li class="c666 "><span class="label">&nbsp;</span><input type="checkbox" value="" />阅读并接受<a class="blue" >《搜景观注册协议》</a>和<a class="blue">《隐私权相关政策》</a></li>
-            </ul>
+            <form action="mp/register" method="post">
+                <ul class="register_form left m_t20" >
+                    <li><span class="label">用户类型</span>  <input type="checkbox" value="" /><span class="c666">个人会员</span>  <input type="checkbox" value="" /><span class="c666">企业会员</span></li>
+                    <li><span class="label">账号</span><input type="text" value="" class="f_text" placeholder="输入邮箱"/></li>
+                    <li><span class="label">密码</span><input type="password" value=""  class="f_text" placeholder="输入6-12个字符，字母区分大小写"//></li>
+                    <li><span class="label">确认密码</span><input type="password" value="" class="f_text" placeholder="请再次输入密码"//></li>
+                    <li><span class="label">验证码</span><input type="text" value=""  class="f_text" placeholder="输入下面验证码，不区分大小写"//></li>
+                    <li class="a-underline"><span class="label">&nbsp;</span><img src="/static/front/front_img/c_code.png" /> <a href="" class="blue">看不清，换一张</a></li>
+                    <li><span class="label">&nbsp;</span><input type="submit" value="注册"  class="long-btn bg_4ca6ff cfff"/></li>
+                    <li class="c666 "><span class="label">&nbsp;</span><input type="checkbox" value="" />阅读并接受<a class="blue" >《搜景观注册协议》</a></li>
+                </ul>
 
-            <div class="right  borderline p_40 m_t50 m_r100 p_b20">
-                <img src="/static/front/front_img/code.png" />
-                <p class="m_t10 c999 text_c">搜景观官方微信</p>
-            </div>
+                <div class="right  borderline p_40 m_t50 m_r100 p_b20">
+                    <img src="/static/front/front_img/code.png" />
+                    <p class="m_t10 c999 text_c">搜景观官方微信</p>
+                </div>
+            </form>
         </div>
 
 
@@ -109,6 +111,8 @@
 
 
         <?php echo $content; ?>
+
+
 
 
     </body>
