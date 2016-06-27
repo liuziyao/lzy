@@ -1,59 +1,9 @@
 <?php
 
-/**
- * This is the model class for table "user".
- *
- * The followings are the available columns in table 'user':
- * @property integer $id
- * @property string $username
- * @property string $email
- * @property string $mobile
- * @property string $password
- * @property integer $user_type
- * @property string $qq
- * @property string $wechat
- * @property string $fax
- * @property string $avatar
- * @property string $realname
- * @property string $nickname
- * @property string $birthday
- * @property integer $gender
- * @property integer $login_num
- * @property integer $last_login
- * @property string $last_ip
- * @property string $reg_ip
- * @property string $work_area_code
- * @property string $work_area_name
- * @property string $work_address
- * @property string $personal_signature
- * @property string $user_private
- * @property integer $is_vip
- * @property integer $company_id
- * @property string $refuse_friend_list
- * @property integer $fans_count
- * @property integer $view_count
- * @property integer $view_home_count
- * @property integer $fav_home_count
- * @property integer $fav_count
- * @property integer $zuopin_count
- * @property string $ukw_type_ids
- * @property string $ukw_type_values
- * @property string $ukw_style_ids
- * @property string $ukw_style_values
- * @property string $ukw_major_ids
- * @property string $ukw_major_values
- * @property string $ukw_project_ids
- * @property string $ukw_project_values
- * @property integer $jb_year
- * @property string $website_module_ids
- * @property integer $point
- * @property integer $approve_state
- * @property integer $created
- * @property integer $vip_expire_time
- * @property integer $vip_apply_state
- * @property integer $sorting
- */
 class User extends CActiveRecord {
+
+    public $password2;
+    public $vcode;
 
     /**
      * @return string the associated database table name
@@ -69,7 +19,12 @@ class User extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('email', 'email', 'on' => 'reg,send,admin_reg', 'allowEmpty' => true, 'message' => '邮箱格式错误'),
+            array('username', 'unique', 'message' => '用户名已存在！'),
+            array('username', 'required', 'message' => '用户名必填！', 'on' => 'reg'),
+            array('password', 'required', 'message' => '密码不能为空', 'on' => 'reg'),
+            array('password', 'validatePwd', 'on' => 'reg'),
+            array('password2', 'compare', 'compareAttribute' => 'password', 'message' => '两次密码不一致', 'on' => 'reg'),
+            array('email', 'email', 'on' => 'reg', 'allowEmpty' => true, 'message' => '邮箱格式错误'),
             array('personal_signature, user_private, website_module_ids', 'required'),
             array('user_type, gender, login_num, last_login, is_vip, company_id, fans_count, view_count, view_home_count, fav_home_count, fav_count, zuopin_count, jb_year, point, approve_state, created, vip_expire_time, vip_apply_state, sorting', 'numerical', 'integerOnly' => true),
             array('username, nickname, work_area_name', 'length', 'max' => 64),
@@ -86,6 +41,14 @@ class User extends CActiveRecord {
         );
     }
 
+    //密码验证
+    public function validatePwd($attribute, $params) {
+        $patton = '/^[A-Za-z0-9_!@#=$%^&*()]{6,}$/';
+        if (!preg_match($patton, $this->$attribute)) {
+            $this->addError($attribute, '请输入至少6位字母、数字或符号的密码！');
+        }
+        //return UtilD::password($_POST['Account']['pwd']);
+    }
     /**
      * @return array relational rules.
      */

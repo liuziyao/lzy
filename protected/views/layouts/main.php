@@ -31,7 +31,7 @@
             <ul class="p_40 register_form m_li15 f_w100">
                 <li><input type="text" placeholder="输入邮箱账号" class="f_text"/></li>
                 <li><input type="password" placeholder="输入下面的验证码" class="f_text"/></li>
-                <li class="a-underline text_r"> <a  class="blue" onclick="common.popShow('pop_password_id')">忘记密码？</a> <a  class="blue" onclick="common.popShow('pop_register_id')">立即注册</a></li>
+                <li class="a-underline text_r"> <a  class="blue" onclick="common.popShow('pop_password_id')">忘记密码？</a> <a href="/mp/register">立即注册</a></li>
                 <li><input type="button" value="登陆"  class="long-btn bg_4ca6ff cfff "/></li>
                 <li class="clearfix p_t10">
                     <div class="left">
