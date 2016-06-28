@@ -198,14 +198,14 @@ class UserVerify extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('uid, verify_type', 'required'),
-            array('uid, verify_type, expire_time, verify_time, send_time, times, sta, created', 'numerical', 'integerOnly' => true),
+            array('user_id, verify_type', 'required'),
+            array('user_id, verify_type, expire_time, verify_time, send_time, times, sta, created', 'numerical', 'integerOnly' => true),
             array('verify_content', 'length', 'max' => 32),
             array('vcode', 'length', 'max' => 8),
             array('session_id', 'length', 'max' => 128),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, uid, verify_type, verify_content, vcode, expire_time, verify_time, send_time, times, sta, session_id, created', 'safe', 'on' => 'search'),
+            array('id, user_id, verify_type, verify_content, vcode, expire_time, verify_time, send_time, times, sta, session_id, created', 'safe', 'on' => 'search'),
         );
     }
 
@@ -225,7 +225,7 @@ class UserVerify extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'uid' => '用户ID',
+            'user_id' => '用户ID',
             'verify_type' => '0手机，1邮箱',
             'verify_content' => '手机号或者邮箱号',
             'vcode' => '验证码',
@@ -257,7 +257,7 @@ class UserVerify extends CActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id);
-        $criteria->compare('uid', $this->uid);
+        $criteria->compare('user_id', $this->user_id);
         $criteria->compare('verify_type', $this->verify_type);
         $criteria->compare('verify_content', $this->verify_content, true);
         $criteria->compare('vcode', $this->vcode, true);

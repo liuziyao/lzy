@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
+Source Server         : localhost
 Source Server Version : 50617
-Source Host           : 127.0.0.1:3306
+Source Host           : localhost:3306
 Source Database       : sojg
 
 Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-06-15 21:53:23
+Date: 2016-06-28 17:25:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,7 +26,7 @@ CREATE TABLE `admin` (
   `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态，1为启用，0为禁用',
   `created` int(32) NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of admin
@@ -46,7 +46,7 @@ CREATE TABLE `news` (
   `admin_id` int(11) NOT NULL DEFAULT '0' COMMENT 'Admin',
   `admin_name` varchar(64) NOT NULL DEFAULT '' COMMENT '审核管理员',
   `cat_id` int(11) NOT NULL DEFAULT '0' COMMENT '分类ID',
-  `theme_ids` varchar(512) NOT NULL DEFAULT '' COMMENT 'theme_ids',
+  `theme_ids` varchar(512) NOT NULL DEFAULT '' COMMENT '相关专题',
   `active_ids` varchar(512) NOT NULL DEFAULT '' COMMENT '相关活动',
   `cp_category_ids` varchar(512) NOT NULL DEFAULT '' COMMENT '相关企业',
   `headline` varchar(256) NOT NULL DEFAULT '' COMMENT '摘要',
@@ -67,13 +67,12 @@ CREATE TABLE `news` (
   `area_code` varchar(32) NOT NULL DEFAULT '' COMMENT '新闻地点',
   `source` varchar(32) NOT NULL DEFAULT '' COMMENT '新闻来源',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of news
 -- ----------------------------
-INSERT INTO `news` VALUES ('5', '小萌', '0', '1', '', '0', '', '1', '', '', '', '', '', '<p><span style=\"color: rgb(255, 0, 0);\"><em><strong>小萌是猪</strong></em></span></p>', '1', '', '', '0', '0', '0', '0', '0', '0', '0', '', '1465954948', '', '');
-INSERT INTO `news` VALUES ('6', 'haha', '0', '1', '', '0', '', '15', '', '', '', '', '/upload/1606/1521/43/57615b70307d2.jpg', '<p>sdfdsf<br/></p>', '1', '', '', '0', '0', '0', '0', '0', '0', '0', '', '1465998195', '', '');
+INSERT INTO `news` VALUES ('5', '小萌', '0', '1', '', '0', '', '1', '', '', '', '', '', '<p><span style=\"color: rgb(255, 0, 0);\"><em><strong>小萌是猪</strong></em></span></p>', '1', '', '', '0', '1', '0', '0', '0', '0', '0', '', '1465954948', '', '');
 
 -- ----------------------------
 -- Table structure for news_category
@@ -86,40 +85,13 @@ CREATE TABLE `news_category` (
   `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态，1为显示，0为隐藏',
   `created` int(32) NOT NULL DEFAULT '0' COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of news_category
 -- ----------------------------
 INSERT INTO `news_category` VALUES ('15', '小萌', '0', '1', '1465896220');
 INSERT INTO `news_category` VALUES ('16', '哈哈', '0', '1', '1465896456');
-
--- ----------------------------
--- Table structure for upload
--- ----------------------------
-DROP TABLE IF EXISTS `upload`;
-CREATE TABLE `upload` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `user_type` int(10) NOT NULL DEFAULT '0' COMMENT '用户类型，管理平台0',
-  `user_id` int(10) NOT NULL COMMENT '用户ID',
-  `item_type` int(10) NOT NULL DEFAULT '0',
-  `item_id` int(10) NOT NULL DEFAULT '0',
-  `name` varchar(100) NOT NULL,
-  `file` varchar(50) NOT NULL,
-  `size` int(10) NOT NULL DEFAULT '0',
-  `ext` varchar(5) NOT NULL,
-  `thumbs` varchar(32) NOT NULL COMMENT '缩略图',
-  `uniqid` varchar(15) NOT NULL,
-  `status` tinyint(2) NOT NULL DEFAULT '1' COMMENT '1->被使用，2->已删除',
-  `created` int(10) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`name`),
-  UNIQUE KEY `file` (`file`)
-) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8 COMMENT='上传表';
-
--- ----------------------------
--- Records of upload
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for user
@@ -179,9 +151,34 @@ CREATE TABLE `user` (
   KEY `email` (`email`),
   KEY `mobile` (`mobile`),
   KEY `sorting` (`sorting`)
-) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8 COMMENT='用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', '小萌', '', '', '', '0', '', '', '', '', '', '', '', '0', '0', '0', '', '', '', '', '', '', '', '0', '0', null, '0', '0', '0', '0', '0', '0', '', '', '', '', '', '', '', '', '0', '', '0', '1', '0', '0', '0', '0');
+
+-- ----------------------------
+-- Table structure for user_verify
+-- ----------------------------
+DROP TABLE IF EXISTS `user_verify`;
+CREATE TABLE `user_verify` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL COMMENT '用户ID',
+  `verify_type` tinyint(1) NOT NULL COMMENT '0手机，1邮箱',
+  `verify_content` varchar(32) NOT NULL DEFAULT '' COMMENT '手机号或者邮箱号',
+  `vcode` varchar(8) NOT NULL DEFAULT '' COMMENT '验证码',
+  `expire_time` int(32) NOT NULL DEFAULT '0' COMMENT '过期时间',
+  `verify_time` int(32) NOT NULL DEFAULT '0' COMMENT '验证时间',
+  `send_time` int(32) NOT NULL DEFAULT '0' COMMENT '发送时间',
+  `times` tinyint(4) NOT NULL DEFAULT '0' COMMENT '当天验证次数',
+  `sta` tinyint(1) NOT NULL DEFAULT '0' COMMENT '认证状态（-1 未通过验证，0 未验证，1 通过验证）',
+  `session_id` varchar(128) NOT NULL DEFAULT '0' COMMENT 'session',
+  `created` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user_verify
+-- ----------------------------
+INSERT INTO `user_verify` VALUES ('1', '0', '1', '316814489@qq.com', 'vlw3', '1467191925', '0', '1467105525', '1', '0', 'cu18u37kjnsr6622t1q3v94jg0', '0');
